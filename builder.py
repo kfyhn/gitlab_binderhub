@@ -346,8 +346,6 @@ class BuildHandler(BaseHandler):
             provider=provider_prefix,
             spec=spec,
         )
-        print(provider)
-        print(provider.__dict__)
         resolved_spec = await provider.get_resolved_spec()
         persistent_binder_url = '{proto}://{host}{base_url}v2/{provider}/{spec}'.format(
             proto=self.request.protocol,

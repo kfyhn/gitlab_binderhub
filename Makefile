@@ -1,5 +1,5 @@
 IMAGE=kfyhn/k8s-binderhub
-TAG=0.2.0-c04966f
+TAG=0.2.0-d2e3b8b
 
 build:
 	docker build -t ${IMAGE}:${TAG} .
